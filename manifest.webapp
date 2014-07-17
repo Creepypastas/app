@@ -4,7 +4,7 @@
 	"launch_path": "/app.html",
 	"version": "0.11.22",
 
-
+	"appcache_path": "/app.creepypastas.com.appcache",
 	"icons": {
 		"32":	"/favicon/favicon.32.png",
 		"60":	"/favicon/favicon.60.png",
