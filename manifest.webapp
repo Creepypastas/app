@@ -1,0 +1,14 @@
+{
+  "name": "Creepypastas.com (BETA)",
+  "description": "Aplicación oficial de creepypastas.com",
+  "launch_path": "/app.html",
+  "icons": {
+    "512": "/images/favicon.512.png"
+  },
+  "version": "0.11.11",
+  "developer": {
+    "name": "@creepypastas",
+    "url": "http://creepypastas.com"
+  },
+  "default_locale": "es"
+}
