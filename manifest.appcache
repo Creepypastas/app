@@ -21,7 +21,7 @@ transitions.css
 #humans.txt
 
 #FALLBACK:
-/ /cache.html
+/network.html /cache.html
 
 NETWORK:
 *
