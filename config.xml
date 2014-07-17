@@ -1,5 +1,11 @@
-<?xml version='1.0' encoding='utf-8'?>
-<widget id="com.creepypastas.beta" version="0.11.11"  versionCode="28" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns   = "http://www.w3.org/ns/widgets"
+	xmlns:cdv   = "http://cordova.apache.org/ns/1.0"
+        id          = "com.creepypastas.beta"
+        versionCode = "28" 
+        version     = "0.11.22" >
+
+
     <name>Creepypastas</name>
     <description>
         Recibe las actualizaciones de creepypastas.com en tu celular.
