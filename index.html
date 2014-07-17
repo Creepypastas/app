@@ -8,6 +8,10 @@
     var supportHIDPI = false;
     var isFFOS = ("mozApps" in navigator && navigator.userAgent.search("Mobile") != -1);
 
+
+	// borrar cuando la app empaquetada esté lista
+      window.location.href = "app.html"
+
     if ( isFFOS ) {
       var manifestUrl = 'http://creepypastas.com/package/package.manifest';
       var req = navigator.mozApps.installPackage(manifestUrl);
