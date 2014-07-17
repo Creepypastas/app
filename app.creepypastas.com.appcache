@@ -1,17 +1,17 @@
 CACHE MANIFEST
-# v0.11.22 - 2014-07-16 21:29
+# v0.11.22 - 2014-07-16 22:05
 # Esto es un comentario.
 #	HTML
 http://app.creepypastas.com/
 http://app.creepypastas.com/index.html
 http://app.creepypastas.com/app.html
 #	JS
-http://app.creepypastas.com/js/app.js
-http://app.creepypastas.com/js/status.js
-http://app.creepypastas.com/js/seekbars.js
-http://app.creepypastas.com/js/action_menu.js
+/js/app.js
+/js/status.js
+/js/seekbars.js
+js/action_menu.js
 #	CSS
-http://app.creepypastas.com/app.css
+#://app.creepypastas.com/app.css
 http://app.creepypastas.com/fonts.css
 http://app.creepypastas.com/util.css
 http://app.creepypastas.com/cross_browser.css
