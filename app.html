@@ -7,8 +7,9 @@
   <link rel="icon" type="image/png" href="favicon/s.128.png" />
   <!-- Building blocks -->
   <link rel="stylesheet" href="style/headers.css">
+  <link rel="stylesheet" href="style/lists.css">
+  <link rel="stylesheet" href="style/drawer.css">
   <link rel="stylesheet" href="style/toolbars.css">
-  <link rel="stylesheet" href="style/lists.css" type="text/css">
   <!-- Icons -->
   <link rel="stylesheet" href="icons/styles/action_icons.css">
 
@@ -19,18 +20,43 @@
   <link rel="stylesheet" href="util.css">
  
   <!-- Additional markup to make Building Blocks kind of cross browser -->
-  <link rel="stylesheet" href="cross_browser.css">
+  <!--link rel="stylesheet" href="cross_browser.css"-->
 
   <!-- CP CSS: app styles -->
   <link rel="stylesheet" href="app.css">
 
+
 </head>
 <body>
-
-  <section class="skin-dark" role="region">
-  <header class="fixed">
-    <h1>Creepypastas<em>.com</em> (beta)</h1>
-  </header>
+  <!--section id="index" data-position="current"-->
+    <section data-type="sidebar">
+      <header>
+        <menu type="toolbar">
+          <a href="#">X</a>
+        </menu>
+        <h1>Creepypastas</h1>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="#">item 1</a></li>
+          <li><a href="#">item 2</a></li>
+          <li><a href="#">item 3</a></li>
+        </ul>
+        <h2>Timeline</h2>
+        <ul>
+          <li><a href="#">Sangre-Nieves</a></li>
+          <li><a href="#">Star</a></li>
+          <li><a href="#">Kazli 999</a></li>
+        </ul>
+      </nav>
+    </section>
+  
+  <section id="drawer" class="skin-dark" role="region">
+        <header class="fixed">
+          <a href="#"><span class="icon icon-menu">hide sidebar</span></a>
+          <a href="#drawer"><span class="icon icon-menu">show sidebar</span></a>
+        <h1>Creepypastas<em>.com</em> (BETA)</h1>
+      </header>
   <!--header>
     <h2>Fase de pruebas</h2>
   </header-->
