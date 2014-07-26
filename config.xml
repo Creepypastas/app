@@ -16,6 +16,6 @@
     <preference name="permissions" value="none"/>
 
     <content src="index.html" />
-    <icon src="favicon/favicon.simple.png" />
+    <icon src="favicon/s.256.png" />
     <access origin="*" />
 </widget>
