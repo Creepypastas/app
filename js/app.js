@@ -1,4 +1,4 @@
-var v = 1;
+var v = 2;
 if (typeof creepypastas === 'undefined' || creepypastas.v < v){ //fallback al código local
 
 var creepypastas = {
@@ -20,4 +20,37 @@ var creepypastas = {
 }
 
 creepypastas.mListeners();
+
+function loadJSON(url,f){
+request = new XMLHttpRequest();
+request.open('GET', url, true);
+
+request.onreadystatechange = function() {
+  if (this.readyState === 4){
+    if (this.status >= 200 && this.status < 400){ // Success!
+      data = JSON.parse(this.responseText);
+        f(data);
+    } else {console.log("Error :(");}
+  }
+};
+
+request.send();
+request = null;
+}
+
+function mostrar(){
+ document.querySelector('#timeline ul').innerHTML="";
+
+    for (i=0;i<20;i++){
+    li = document.createElement('li');
+    li.innerHTML="<a href='" + creepypastas.news.posts[i].URL.replace(/(<([^>]+)>)/ig,"") + "'><p>" + creepypastas.news.posts[i].content.replace(/(<([^>]+)>)/ig,"") + "</p><p>" + creepypastas.news.posts[i].content.replace(/(<([^>]+)>)/ig,"") + "</p></a>";
+     document.querySelector('#timeline ul').appendChild(li);
+    }
+}
+
+function almacenar(data){creepypastas.news=data;mostrar();}
+
+loadJSON('http://public-api.wordpress.com/rest/v1/sites/esx.creepypastas.net/posts/?number=20',almacenar);
+document.querySelector('#timeline header').innerHTML="Experiencias paranormales";
+console.log("experiencias paranormales");
 }
