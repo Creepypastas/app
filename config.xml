@@ -14,7 +14,7 @@
     </author>
     <preference name="permissions" value="none"/>
 
-    <content src="index.html" />
-    <icon src="favicon/s.256.png" />
+    <content src="app.html" />
+    <icon src="favicon/s.128.png" />
     <access origin="*" />
 </widget>
