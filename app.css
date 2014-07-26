@@ -1,20 +1,2 @@
-#cppsnews{
-  background:black !important;
-  min-height: 100%;
-  width: 100%;
-  color:whitesmoke;
-  font-size: 13px;
-  padding-top:11px;
-}
-#cppsnews article{
-  max-width: 77%;
-  min-height: 30px;
-  padding: 11px;
-  background: red;
-  margin: auto;
-  margin-bottom: 11px;
-  border-radius: 3px;
-}
-#cppsnews li{
-  background: black! important;
-}
+.oculto{display:none;}
+.activo{display:block;}
