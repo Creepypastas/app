@@ -72,10 +72,14 @@ sa.src = 'https://admin.appnext.com/sticky/jq.js';
 var s = document.getElementsByTagName('script')[0];
 s.parentNode.insertBefore(sa, s);
 
-document.getElementsByTagName('html')[0].style.margin="0"
 creepypastas.appNextYA = true;
 }
 
 if(!creepypastas.appNextYA) appNext();
+
+var style = document.createElement('style');
+style.type = 'text/css';
+style.innerHTML = 'html { margin-top:0px !important; }';
+document.getElementsByTagName('head')[0].appendChild(style);
 
 }
