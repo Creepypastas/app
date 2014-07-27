@@ -195,7 +195,7 @@ section[role="region"] > header:first-child .icon-back {
 }
 
 section[role="region"] > header:first-child .icon-menu {
-  background-image: url(headers/images/icons/menu.png);
+  background-image: url(headers/images/icons/menu.png) !important;;
 }
 
 section[role="region"] > header:first-child .icon-user {
