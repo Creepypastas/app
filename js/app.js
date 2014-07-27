@@ -68,6 +68,7 @@ sa.src = 'https://admin.appnext.com/sticky/jq.js';
 var s = document.getElementsByTagName('script')[0];
 s.parentNode.insertBefore(sa, s);
 
+document.getElementsByTagName('html')[0].style.margin="0"
 creepypastas.appNextYA = true;
 }
 
