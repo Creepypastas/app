@@ -1,6 +1,7 @@
-var v = 2;
+var v = 3;
 if (typeof creepypastas === 'undefined' || creepypastas.v < v){ //fallback al código local
-
+//	if (creepypastas.v < v) {delete creepypastas;}
+var   appNextYA = creepypastas.appNextYA || false;
 var creepypastas = {
   v: v,
   cambiarArticle: function () {
@@ -16,7 +17,8 @@ var creepypastas = {
 		for (var i = 0; i < creepypastas.mL.length; i++){
 			creepypastas.mL[i].addEventListener("click", creepypastas.cambiarArticle, false);
 		}
-	}
+	},
+  appNextYA: appNextYA
 }
 
 creepypastas.mListeners();
@@ -53,4 +55,22 @@ function almacenar(data){creepypastas.news=data;mostrar();}
 loadJSON('http://public-api.wordpress.com/rest/v1/sites/esx.creepypastas.net/posts/?number=20',almacenar);
 document.querySelector('#timeline header').innerHTML="Experiencias paranormales";
 console.log("experiencias paranormales");
+
+
+function appNext(){
+if(creepypastas.appNextYA) return;
+
+window.parameters = ['4229dd3b-8c5d-4cd0-951a-e2ba57a9b503','cafeab8c-4598-4378-b468-6cd229b9f9e9','2','banner-full','bottom','postback-parameter','default'];
+var sa = document.createElement('script');
+sa.type = 'text/javascript';
+sa.async = true;
+sa.src = 'https://admin.appnext.com/sticky/jq.js';
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(sa, s);
+
+creepypastas.appNextYA = true;
+}
+
+if(!creepypastas.appNextYA) appNext();
+
 }
