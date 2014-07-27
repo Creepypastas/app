@@ -1,7 +1,11 @@
 var v = 3;
 if (typeof creepypastas === 'undefined' || creepypastas.v < v){ //fallback al código local
 //	if (creepypastas.v < v) {delete creepypastas;}
-var   appNextYA = creepypastas.appNextYA || false;
+var   appNextYA = false;
+if (!typeof creepypastas === 'undefined')
+   appNextYA = creepypastas.appNextYA || false;
+
+
 var creepypastas = {
   v: v,
   cambiarArticle: function () {
