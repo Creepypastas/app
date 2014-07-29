@@ -56,7 +56,7 @@ function mostrar(){
 
 function almacenar(data){creepypastas.news=data;mostrar();}
 
-loadJSON('http://public-api.wordpress.com/rest/v1/sites/esx.creepypastas.net/posts/?number=20',almacenar);
+loadJSON('http://public-api.wordpress.com/rest/v1/sites/esx.creepypastas.net/posts/?number=20&order=ASC',almacenar);
 document.querySelector('#timeline header').innerHTML="Experiencias paranormales";
 console.log("experiencias paranormales");
 
