@@ -1,4 +1,4 @@
-var v = 5;
+var v = 6;
 if (typeof creepypastas === 'undefined' || creepypastas.v < v){ //fallback al código local
 //	if (creepypastas.v < v) {delete creepypastas;}
 var   appNextYA = false;
